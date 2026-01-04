@@ -108,5 +108,11 @@ Employee record should be deleted successfully
 **Steps:**
 1. Delete an employee
 2. Search the same employee again  
-**Expected Result:**  
+**Expected Result:**
+
+
+## Tester Notes
+- Navigation to PIM module is smooth
+- Search functionality works but takes slight delay sometimes
+
 Deleted employee should not appear in search results
