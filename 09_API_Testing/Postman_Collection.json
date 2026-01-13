@@ -1,0 +1,70 @@
+{
+  "info": {
+    "name": "OrangeHRM_API_Testing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login API - Valid Credentials",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\": \"Admin\", \"password\": \"admin123\"}"
+        },
+        "url": {
+          "raw": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/validate",
+          "protocol": "https",
+          "host": [
+            "opensource-demo",
+            "orangehrmlive",
+            "com"
+          ],
+          "path": [
+            "web",
+            "index.php",
+            "auth",
+            "validate"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Login API - Invalid Credentials",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\": \"Admin\", \"password\": \"wrongpassword\"}"
+        },
+        "url": {
+          "raw": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/validate",
+          "protocol": "https",
+          "host": [
+            "opensource-demo",
+            "orangehrmlive",
+            "com"
+          ],
+          "path": [
+            "web",
+            "index.php",
+            "auth",
+            "validate"
+          ]
+        }
+      }
+    }
+  ]
+}
