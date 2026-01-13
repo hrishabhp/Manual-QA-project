@@ -98,7 +98,7 @@ Basic SQL queries were used to validate backend data such as:
 Example:
 ```sql
 SELECT * FROM users WHERE username = 'Admin';
-
+```
 All SQL queries are available in:
 
 SQL_Validation/Manual_QA_SQL_Validation.sql
