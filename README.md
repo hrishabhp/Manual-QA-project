@@ -70,6 +70,14 @@ Defects were logged with the following details:
 
 Note: Jira-style defect reports are maintained for demonstration purposes.
 
+## Sample QA Artifacts
+
+### Sample Test Case
+![Sample Test Case](./11_Screenshots/Test_Case_Sample.png)
+
+### Sample Defect Report
+![Sample Defect Report](./11_Screenshots/Bug_Report_Sample.png)
+
 ## API & SQL Validation
 
 - Validated API responses using Postman (status codes, response body)
