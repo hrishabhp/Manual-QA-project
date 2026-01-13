@@ -1,146 +1,89 @@
-# 🧪 OrangeHRM – Manual QA Testing Project
+# OrangeHRM Manual QA Project
 
-## 📌 Project Overview
-This project demonstrates **end-to-end manual testing** of the **OrangeHRM Open Source Demo Application**.  
-It covers requirement analysis, test case design, test execution, exploratory testing, backend data validation using SQL, and basic API testing using Postman.
+## Project Overview
 
-The goal of this project is to showcase **real-world QA skills**.
+This project demonstrates end-to-end manual testing of the OrangeHRM open-source demo application.
+The focus was on validating core HR workflows, identifying defects, and ensuring application stability
+through structured testing techniques.
 
----
+## Application Under Test
 
-## 🌐 Application Under Test (AUT)
-- **Application Name:** OrangeHRM (Open Source Demo)
-- **URL:** https://opensource-demo.orangehrmlive.com/
-- **Type:** Web Application
-- **Domain:** Human Resource Management System (HRMS)
+Application: OrangeHRM Demo
+Type: Web Application
+Domain: Human Resource Management System (HRMS)
 
----
+## Test Scope
 
-## 🧰 Tools & Technologies Used
-- **Manual Testing:** Test scenarios, test cases, execution
-- **Defect Tracking:** JIRA (conceptual)
-- **Database Validation:** MySQL (basic SQL queries)
-- **API Testing:** Postman (REST APIs)
-- **Documentation:** MS Word, Markdown
-- **Version Control:** Git & GitHub
+Modules Covered:
+- Login
+- Admin
+- PIM
+- Leave
+- User Management
+- Role-based Access
 
----
+## Testing Types Performed
 
-## 📂 Project Structure
-OrangeHRM-Manual-QA-Project
-│
-├── Application_Requirements
-│ └── Application_Requirements.docx
-│
-├── Test_Cases
-│ └── Manual_Test_Cases.xlsx
-│
-├── Exploratory_Testing
-│ └── Exploratory_Testing_Notes.docx
-│
-├── SQL_Validation
-│ └── Manual_QA_SQL_Validation.sql
-│
-├── API_Testing
-│ ├── API_Test_Cases.docx
-│ ├── Postman_Collection.json
-│ └── Screenshots
-│
-├── Test_Reports
-│ ├── Test_Execution_Report.docx
-│ └── Test_Summary_Report.docx
-│
-└── README.md
+- Functional Testing
+- Regression Testing
+- Smoke Testing
+- Sanity Testing
+- Negative Testing
+- Boundary Value Testing
+- Exploratory Testing
 
+## Test Artifacts
 
----
+- Test Plan
+- Test Scenarios
+- Test Cases
+- Test Execution Reports
+- Defect Reports
+- Requirement Traceability Matrix (RTM)
 
-## ✅ Testing Scope
-The following modules were tested:
+## Tools Used
 
-- Login Module
-- Admin Module
-- PIM (Personal Information Management) Module
-- Leave Module
-- My Info Module
-- Dashboard (basic validation)
+- Manual Testing
+- JIRA (defect tracking – Jira-style documentation)
+- MS Excel / Word
+- Postman (API testing)
+- MySQL (basic SQL validation)
 
----
+## Test Execution Summary
 
-## 🧪 Types of Testing Performed
-- Functional Testing  
-- Smoke Testing  
-- Regression Testing  
-- Exploratory Testing  
-- Backend Data Validation using SQL  
-- Basic API Testing (Postman)
+- Total Test Cases Designed: 40+
+- Test Cases Executed: 40+
+- Passed: XX
+- Failed: XX
+- Blocked: X
+- Defects Logged: 10+
 
----
+## Defect Management
 
-## 🔍 Exploratory Testing
-Exploratory testing was performed to identify:
-- Edge cases
-- Usability issues
-- Validation gaps not covered in predefined test cases
+Defects were logged with the following details:
+- Defect ID
+- Summary
+- Steps to Reproduce
+- Expected vs Actual Result
+- Severity & Priority
+- Status
 
-Findings and observations are documented in:
-Exploratory_Testing/Exploratory_Testing_Notes.docx
+Note: Jira-style defect reports are maintained for demonstration purposes.
 
+## API & SQL Validation
 
----
+- Validated API responses using Postman (status codes, response body)
+- Performed basic SQL queries to validate backend data consistency
 
-## 🗄️ SQL Validation
-Basic SQL queries were used to validate backend data such as:
-- User existence
-- Employee records
-- Data consistency after UI actions
+## How to Use This Repository
 
-Example:
-```sql
-SELECT * FROM users WHERE username = 'Admin';
-```
-All SQL queries are available in:
+Each folder contains specific QA artifacts.
+Start with Test Plan → Scenarios → Test Cases → Execution → Defects → RTM.
 
-SQL_Validation/Manual_QA_SQL_Validation.sql
+## What I Learned
 
-🔗 API Testing
-
-Basic REST API testing was performed using Postman to validate:
-1. Login API (valid and invalid scenarios)
-2. API response behavior
-3. Status codes and error handling
-4. Access to protected endpoints
-
-Artifacts included:
-1. API Test Cases document
-2. Postman Collection (exported JSON)
-3. API response screenshots
-
-Location:
-API_Testing/
-
-📊 Test Reports
-High-level test execution and summary reports were created to simulate real QA deliverables.
-1. Test Execution Report
-2. Test Summary Report
-
-Location:
-Test_Reports/
-
-🧠 Key Learning Outcomes
-- Understanding of SDLC & STLC
-- Writing clear and effective test cases
-- Performing exploratory testing
-- Validating backend data using SQL
-- Testing REST APIs using Postman
-- Creating professional QA documentation
-
-👤 Author
-
-Hrishabh Pal
-Entry-Level QA Engineer
-Skills: Manual Testing | SQL | API Testing | Postman | JIRA
-
-📌 Note
-
-This project is created for learning and portfolio purposes using the OrangeHRM open-source demo application.
+- How to analyze requirements and derive test scenarios
+- Writing effective manual test cases
+- Defect lifecycle and severity vs priority
+- Importance of regression testing
+- Basics of API and database validation
